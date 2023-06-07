@@ -1,17 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="d-flex flex-column justify-content-center align-items-center">
+    <NavBar msg="barraNavegacion"/>
+    <PresentationInitial msg="presentacion"/>
+    <SeccionOne msg="SeccionOne"/>
+    <SeccionExclusive msg="SeccionExclusive"/>
+    <PresentacionBest msg="PresentacionBest"/>
+    <AboutUs msg="AboutUs"/>
+    <latestBlog msg="latestBlog"/>
+    <PiePagina msg="PiePagina"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from '@/components/NavBar.vue'
+import PresentationInitial from '@/components/PresentationInitial.vue'
+import SeccionOne from '@/components/SeccionOne.vue'
+import SeccionExclusive from '@/components/SeccionExclusive.vue'
+import PresentacionBest from '@/components/presentacionBest.vue'
+import AboutUs from '@/components/AboutUs.vue'
+import latestBlog from '@/components/latestBlog.vue'
+import PiePagina from '@/components/PiePagina.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavBar,
+    PresentationInitial,
+    SeccionOne,
+    SeccionExclusive,
+    PresentacionBest,
+    AboutUs,
+    latestBlog,
+    PiePagina
   }
 }
 </script>
@@ -23,6 +43,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color: #fefcfb;
 }
+
+
 </style>
